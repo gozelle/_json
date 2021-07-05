@@ -3,5 +3,5 @@
 ## 安装
 
 ```go
-go get -u github.com/mixutils/_json
+go get -u github.com/gobatis/_json
 ```

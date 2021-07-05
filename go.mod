@@ -1,4 +1,4 @@
-module github.com/mixutils/_json
+module github.com/gobatis/_json
 
 go 1.15
 

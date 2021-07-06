@@ -1,4 +1,4 @@
-module github.com/gobatis/_json
+module github.com/koyeo/_json
 
 go 1.15
 

@@ -6,7 +6,7 @@ func Marshal(v interface{}) ([]byte, error) {
 	return jsoniter.Marshal(v)
 }
 
-func MarshalMarshalIndent(v interface{}, prefix, indent string) ([]byte, error) {
+func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error) {
 	return jsoniter.MarshalIndent(v, prefix, indent)
 }
 

@@ -8,6 +8,7 @@ import (
 	"log"
 	"reflect"
 	"strconv"
+	"strings"
 )
 
 // UnmarshalJSON Implements the json.Unmarshaler interface.
@@ -24,6 +25,18 @@ func NewFromReader(r io.Reader) (*Json, error) {
 	dec.UseNumber()
 	err := dec.Decode(&j.data)
 	return j, err
+}
+
+// NewFromString returns a *Json by decoding from string
+func NewFromString(r string) (*Json, error) {
+	j := new(Json)
+	dec := json.NewDecoder(strings.NewReader(r))
+	dec.UseNumber()
+	err := dec.Decode(&j.data)
+	if err != nil {
+		return nil, err
+	}
+	return j, nil
 }
 
 // Float64 coerces into a float64

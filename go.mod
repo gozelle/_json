@@ -1,4 +1,4 @@
-module github.com/koyeo/_json
+module github.com/gozelle/_json
 
 go 1.15
 
